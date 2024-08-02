@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="list.css">
+        <link rel="stylesheet" href="master.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="resume.css">
+        <link rel="stylesheet" href="equations.css">
+        <h1>C<sub>Z</sub></h1>
+        <header class="header">
+            <ul>
+                <li>
+                    <a href="main.html"> Home </a>
+                    <ul class="dropdown_3">
+                        <li><b><a href="resume.html">Resumé</a></b></li>
+                    </ul>
+                </li>
+                <li>   
+                    <a href="scores.html">Score</a>
+                    <ul class="dropdown">
+                        <li>
+                            <b><a href="">Solo</a></b>
+                            <ul class="subdropdown">
+                                <li><i><a href="">Reflections</a></i></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b><a href="">Chamber</a></b>
+                            <ul class="subdropdown_chamber">
+                                <li><i><a href="">In Flux</a></i></li>
+                                <li><i><a href="">Redfin</a></i></li>
+                                <li><i><a href="">Lying Down</a></i></li>
+                                <li><i><a href="">Down the Rabbit Hole</a></i></li>
+                                <li><i><a href="">Still Sky</a></i></li>
+                                <li><i><a href="">To Fool Around</a></i></li>
+                                <li><i><a href="">Nothing Gold Can Stay</a></i></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b><a href="">Orchestral</a></b>
+                            <ul class="subdropdown_orch">
+                                <li><i><a href="">Nautlius</a></i></li>
+                                <li><i><a href="">Waking Up</a></i></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b><a href="">Jazz/Misc Ensembles</a></b>
+                            <ul class="subdropdown_jazz">
+                                <li><i><a href="">Bird On A Wire</a></i></li>
+                                <li><i><a href="">Jabberwocky</a></i></li>
+                                <li><i><a href="">Noir</a></i></li>
+                                <li><i><a href="">The Stranger</a></i></li>
+                                <li><i><a href="">Bridge</a></i></li>
+                                <li><i><a href="">Maxwell</a></i></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Reference</a>
+                    <ul class="dropdown_2">
+                        <li><b><a href="articles.html">Books/ Articles</a></b></li>
+                        <li><b><a href="equations.html">Equations</a></b></li>                     
+                    </ul>
+                </li>
+            </ul>
+            <hr>
+            </header>
+        
+        <style>
+            header{
+                width: 100%;
+                top: 0;
+            }
+            h1{
+                padding-top: 75px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+
+            <div class="return_list">
+                <li>
+                    <a href="reference">Return</a>
+                </li>
+                <br>
+                <li>
+                    <a href="set_theory_list">Set Theory List</a>
+                </li>
+                <br>
+                <li>
+                    <a href="kh">Kh Relations</a>
+                </li>
+                <br>
+                <li>
+                    <a href="articles">Articles</a>
+                </li>
+                <br><br>
+            </div>    
+        
+        <h2>Equations</h2>
+        <div class="equations_list">
+            <ul id="accordion">
+                <li>
+                    <label for="first">Pitch-Class Transposition<span>&#x3e;</span></label>
+                    <input type="radio" name="accordion" id="first" checked>
+                    <div class="kh_list">
+                        <p>
+                            <i>John Rahn | Basic Atonal Theory</i>
+                            <br><br>
+                            T<sub>n</sub>(x) = x + n (mod 12)
+                            <br>
+                            Pitch Transposition
+                            <br>
+                            T<sub>n</sub><sup>p</sup>(x) = x + n
+                            <br>
+                            Pitch Inversion
+                            <br>
+                            T<sub>n</sub><sup>p</sup>I(x) = -x + n
+                            <br>
+                            Pitch-class Inversion
+                            <br>
+                            T<sub>n</sub>I(x) = -x + n (mod 12)
+                            <br><br>
+                            General Rules
+                            <br>
+                            Every T<sub>n</sub>I is its own inverse. Every T<sub>n</sub><sup>p</sup>I is its own inverse.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <label for="second">Subcomplex Kh<span>&#x3e;</span></label>
+                    <input type="radio" name="accordion" id="second">
+                    <div class="kh_list">
+                        <p>
+                            <i>Allen Forte | The Structure of Atonal Music</i>
+                            <br><br>
+                            S/S' ∈ Kh(T,T') iff S ⊃⊂ T & S ⊃⊂ T'
+                            <br>
+                            (S ∈ Kh(T) implies S ∈ K(T))
+                            <br><br>
+                            Set-complex K
+                            <br>
+                            S ⊂ T & S ⊂ T' iff T' ⊂ S' & T ⊂ S'
+                            <br><br>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <label for="third">LPR Equation<span>&#x3e;</span></label>
+                    <input type="radio" name="accordion" id="third">
+                    <div class="kh_list">
+                        <p>
+                            <i>Joseph N. Straus | Contextual-Inversion Spaces</i>
+                            <br><br>
+                            [<i>x, y, z</i>] -- {I<i><sup>(x</sup><sub>y)</sub></i>} -- [<i>x, y,</i> I<i><sup>(x</sup><sub>y)</sub></i><i> z</i>] = L
+                            <br>
+                            [<i>x, y, z</i>] -- {I<i><sup>(z</sup><sub>z)</sub></i>} -- [I<i><sup>(z</sup><sub>z)</sub> x,</i> I<i><sup>(z</sup><sub>z)</sub> y,</i> <i>z</i>] = L'
+                            <br>
+                            [<i>x, y, z</i>] -- {I<i><sup>(x</sup><sub>z)</sub></i>} -- [<i>x</i>, I<i><sup>(x</sup><sub>z)</sub> </i>y,</i> <i>z</i>] = P
+                            <br>
+                            [<i>x, y, z</i>] -- {I<i><sup>(y</sup><sub>y)</sub></i>} -- [I<i><sup>(y</sup><sub>y)</sub> x,</i> <i>y,</i> I<sup>(y</sup><sub>y)</sub> <i>z</i>] = P' (slide)
+                            <br>
+                            [<i>x, y, z</i>] -- {I<i><sup>(y</sup><sub>z)</sub></i>} -- [I<i><sup>(y</sup><sub>z)</sub></i> <i>x</i>, <i>y</i>, <i>z</i>] = R
+                            <br>
+                            [<i>x, y, z</i>] -- {I<i><sup>(x</sup><sub>x)</sub></i>} -- [<i>x</i>, I<i><sup>(x</sup><sub>x)</sub></i> <i>y</i>, I<sup>(x</sup><sub>x)</sub> <i>z</i>] = R'
+                            <br>
+                            I<i><sup>(n</sup><sub>m)</sub></i> = <i>n</i> + <i>m</i> = <i>y</i>
+                            <br>
+                            T<sub><i>y</i></sub>I = -<i>x</i> + <i>y</i>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        </main>
+        <footer>
+            <style>
+                footer{
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 2.5 rem;
+                }
+            </style>
+            <div class="footercontainer">
+                <div class="footerNav">
+                    <ul>
+                        Zachachr40@gmail.com
+                    </ul>
+                </div>
+                <div class="footerbottom">
+                    Copyright &#169 2023 Chris Zacharias
+                    <br>
+                    All Rights Reserved
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

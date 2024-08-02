@@ -1,0 +1,250 @@
+/* header styling*/
+
+h1{
+    text-align: left;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+body{
+    margin: 0px;
+}
+
+main{
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+/* Nav menu and dropdowns*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+    list-style: none;
+    background: white;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+
+ul li a {
+    display: block;
+    padding: 15px 50px;
+    padding-top: 20px;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    font-size: 12px;
+}
+
+
+ul li ul.dropdown {
+    display: block;
+    border: none;
+    height: 200px;
+    overflow: scroll;
+}
+
+ul li ul.dropdown {
+    width: 115%;
+    background: white;
+    box-shadow: 2px 2px 5px black;
+    color: black;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding: 10px 10px;
+
+}
+
+ul li a:hover {
+    background: whitesmoke;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+.subdropdown {
+    display: none;
+}
+
+ul li ul li:hover .subdropdown {
+    display: block;
+    left: 150px;
+}
+
+.subdropdown_chamber {
+    display: none;
+}
+
+ul li ul li:hover .subdropdown_chamber {
+    display: block;
+}
+
+.subdropdown_orch {
+    display: none;
+}
+
+ul li ul li:hover .subdropdown_orch {
+    display: block;
+}
+
+.subdropdown_jazz {
+    display: none;
+}
+
+ul li ul li:hover .subdropdown_jazz {
+    display: block;
+}
+
+
+/* dropdown for reference */
+
+ul li ul.dropdown_2 {
+    display: block;
+}
+
+ul li ul.dropdown_2 {
+    width: 105%;
+    background: white;
+    box-shadow: 2px 2px 5px black;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    text-align: left;
+}
+
+ul li:hover ul.dropdown_2 {
+    display: block;
+}
+
+/* for home dropdown */
+
+ul li ul.dropdown_3 {
+    display: block;
+}
+
+ul li ul.dropdown_3 {
+    width: 110%;
+    background: white;
+    box-shadow: 2px 2px 5px black;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    text-align: left;
+}
+
+ul li:hover ul.dropdown_3 {
+    display: block;
+}
+
+
+/* header font type*/
+
+h1 {
+    font-family: times new roman;
+}
+
+/* Enter website button */
+
+
+button{
+    padding: 5px;
+    background: grey;
+    color: white;
+    font-size: 16px;
+    border: 0;
+    outline: none;
+    cursor: pointer;  
+    width: 75px;
+    margin: 10px auto 0;
+    border-radius: 7px;
+    z-index: 999;
+}
+
+.enter {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.welcome_banner {
+    display: inline-block;
+    border-radius: 7px;       
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    padding-top: 145px;
+    left: 17%;
+}
+
+.welcome_banner h2 {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 14px;
+}
+
+/* accordian */
+
+#accordion {
+    margin: 100px auto;
+    width: 750px;
+    padding-bottom: 150px;
+}
+
+#accordion li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: whitesmoke;
+    border-radius: 4px;
+}
+
+#accordion li label {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#accordion li label span {
+    transform: rotate(90deg);
+    font-size: 12px;
+}
+
+#accordion label + input[type="radio"] {
+    display: none;
+}
+
+#accordion .kh_list {
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+#accordion label + input[type="radio"]:checked + .kh_list {
+    max-height: 400px;
+    overflow-y: scroll;
+}
